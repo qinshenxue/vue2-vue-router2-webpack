@@ -1,0 +1,41 @@
+{
+  "name": "vue2practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-es2015": "6.18.0",
+    "css-loader": "^0.26.0",
+    "cssnano": "^3.8.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "less": "^2.3.1",
+    "less-loader": "^2.2.3",
+    "node-sass": "^3.4.2",
+    "postcss-loader": "^1.2.0",
+    "sass-loader": "^4.0.2",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.4.0",
+    "url-loader": "^0.5.7",
+    "vue": "^2.1.8",
+    "vue-template-compiler": "^2.1.8",
+    "vue-loader": "^10.0.2",
+    "vue-router": "^2.1.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2",
+    "html-webpack-plugin":"2.24.1"
+  },
+  "scripts": {
+    "dev": "node build/dev.js",
+    "prod": "node build/prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.oschina.net:qinshenxue/vue2practice.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
