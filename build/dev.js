@@ -3,6 +3,7 @@ var webpackDevServer = require('webpack-dev-server');
 var config = require("./webpack.dev.config");
 var compiler = webpack(config);
 var server = new webpackDevServer(compiler, {
+	 stats: { colors: true },
     publicPath: '/dist/'  // 必须配置
 });
 server.listen(8080, "0.0.0.0", function () {
