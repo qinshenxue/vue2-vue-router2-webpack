@@ -8,14 +8,14 @@
 </template>
 <style>
 .about{
-    background:#ffffff;
+    background:#fff;
 }
 a{
 color:#000;
 }
 </style>
 <style lang="scss">
-    $color: #0ff;
+    $color: #eee;
     .about {
         background:$color;
     }
