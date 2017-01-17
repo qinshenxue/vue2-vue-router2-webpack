@@ -55,10 +55,10 @@ module.exports = {
             stylus: "vue-style!css!stylus"
         }
     },
-plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.optimize.CommonsChunkPlugin({
-        name: 'vendors'
-    })
-]
+    plugins: [
+        new webpack.HotModuleReplacementPlugin(),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'vendors'
+        })
+    ]
 }
