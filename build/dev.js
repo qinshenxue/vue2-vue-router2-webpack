@@ -1,14 +1,7 @@
 var webpack = require('webpack');
 var webpackDevServer = require('webpack-dev-server');
 var config = require("./webpack.dev.config");
-var hotEntry = ["webpack-dev-server/client?http://localhost:8080/", "webpack/hot/dev-server"];
-var appEntry = config.entry.app;
-if (Array.isArray(appEntry)) {
-	hotEntry = hotEntry.concat(appEntry);
-} else if (typeof appEntry == 'string') {
-	hotEntry.push(appEntry);
-}
-config.entry.app = hotEntry;
+config.entry.app = ["webpack-dev-server/client?http://localhost:8080/", "webpack/hot/dev-server",config.entry.app];
 var compiler = webpack(config);
 var server = new webpackDevServer(compiler, {
 	stats: {
