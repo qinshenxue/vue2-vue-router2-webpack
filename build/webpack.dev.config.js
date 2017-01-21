@@ -47,14 +47,6 @@ module.exports = {
             }
         ]
     },
-    vue: {
-        loaders: {
-            css: "vue-style!css",
-            less: "vue-style!css!less",
-            scss: "vue-style!css!sass",
-            stylus: "vue-style!css!stylus"
-        }
-    },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.optimize.CommonsChunkPlugin({

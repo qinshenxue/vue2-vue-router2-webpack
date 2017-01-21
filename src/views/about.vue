@@ -7,17 +7,18 @@
     </div>
 </template>
 <style>
-.about{
-    background:#fff;
-}
-a{
-color:#000;
-}
+    .about {
+        background: #fff;
+    }
+    
+    a {
+        color: #000;
+    }
 </style>
-<style lang="scss">
+<style lang="sass">
     $color: #eee;
     .about {
-        background:$color;
+        background: $color;
     }
 </style>
 <script type="text/javascript">

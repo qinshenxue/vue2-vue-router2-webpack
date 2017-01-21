@@ -1,5 +1,5 @@
 {
-  "name": "vue2practice",
+  "name": "vue2-vue-router2-webpack",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -19,7 +19,6 @@
     "sass-loader": "^4.0.2",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.4.0",
-    "css-loader": "^0.26.0",
     "url-loader": "^0.5.7",
 
     "vue": "^2.1.10",
@@ -38,8 +37,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@git.oschina.net:qinshenxue/vue2practice.git"
+    "url": "git@github.com:qinshenxue/vue2-vue-router2-webpack.git"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "qinshenxue.com",
+  "license": "MIT"
 }
