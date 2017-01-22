@@ -33,7 +33,8 @@
   },
   "scripts": {
     "dev": "node build/dev.js",
-    "prod": "node build/prod.js"
+    "prod": "node build/prod.js",
+    "dev-cli":"webpack-dev-server --inline --hot --open --config build/webpack.dev.config"
   },
   "repository": {
     "type": "git",
