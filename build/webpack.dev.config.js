@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -8,14 +9,14 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, '../dist'),
-        publicPath: '/dist/',
+        publicPath: '/',
         filename: '[name].js',
         chunkFilename: '[name].js'
     },
     module: {
-        loaders: [
-            {
-                test: /\.vue$/, loader: 'vue'
+        loaders: [{
+                test: /\.vue$/,
+                loader: 'vue'
             },
             {
                 test: /\.(jpe?g|png|gif|svg|mp3)$/,
@@ -27,7 +28,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                loader: "vue-style!css!postcss"
+                loader: "vue-style!css"
             },
             {
                 test: /\.less$/,
@@ -49,8 +50,9 @@ module.exports = {
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
-        new webpack.optimize.CommonsChunkPlugin({
-            name: 'vendors'
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: 'index.tpl.html'
         })
     ]
 }

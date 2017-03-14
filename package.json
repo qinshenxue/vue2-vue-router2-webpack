@@ -33,7 +33,7 @@
   },
   "scripts": {
     "dev": "node build/dev.js",
-    "prod": "node build/prod.js",
+    "build": "node build/prod.js",
     "dev-cli":"webpack-dev-server --inline --hot --open --config build/webpack.dev.config"
   },
   "repository": {
